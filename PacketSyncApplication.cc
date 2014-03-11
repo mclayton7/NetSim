@@ -12,7 +12,7 @@ using namespace std;
 // Constructor:
 // Default Constructor
 PacketSyncApplication::PacketSyncApplication()
-: totalPacketsReceived(0), totalBytesReceived(0)
+: totalPacketsReceived(0), totalBytesReceived(0), state(false)
 {
 	// Nothing Else to Do
 }

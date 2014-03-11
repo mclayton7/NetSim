@@ -35,6 +35,10 @@ Time_t      Simulator::now = 0;
 
 void CreateNetwork()
 {
+    //
+    // This could probably be refactored into a couple of arrays...
+    //
+
     //Create all of the leaf nodes
     Node* H00 = new Node();
     Node* H01 = new Node();
