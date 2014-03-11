@@ -220,16 +220,16 @@ void CreateNetwork()
 
 int main()
 {
-    //seeding random numner generator
+    //seeding random number generator
     struct timeval tv;
     gettimeofday(&tv,0);
     srand48(tv.tv_usec);        
     for(int i = 1; i < 11; i++)
     {
-      RHO = (double)i/10.0;                    // Increment from 0.1 - 1.0 by 0.1
-        RATE = RHO * 10000000.0; // 10Mbps
-        MEANOFF = 0.5;           // Range from 0-1
-        MEANON  = 0.5;           // Range from 0-1
+      RHO = (double)i/10.0;         // Increment from 0.1 - 1.0 by 0.1
+        RATE = RHO * 10000000.0;    // 10Mbps
+        MEANOFF = 0.5;              // Range from 0-1
+        MEANON  = 0.5;              // Range from 0-1
         Simulator::instance = 0;    // Set Simulator instance
         Simulator::events.clear();  // Clear events
         Simulator::nodes.clear();   // Clear nodes
