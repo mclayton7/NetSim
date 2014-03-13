@@ -36,7 +36,8 @@ Time_t      Simulator::now = 0;
 void CreateNetwork()
 {
     //
-    // This could probably be refactored into a couple of arrays...
+    // This could probably be refactored into a couple of arrays,
+    //   but it's good to visualize the nodes
     //
 
     //Create all of the leaf nodes
@@ -224,7 +225,7 @@ int main()
     struct timeval tv;
     gettimeofday(&tv,0);
     srand48(tv.tv_usec);        
-    for(int i = 1; i < 11; i++)
+    for(int i = 1; i < 11; i += 3)
     {
       RHO = (double)i/10.0;         // Increment from 0.1 - 1.0 by 0.1
         RATE = RHO * 10000000.0;    // 10Mbps
